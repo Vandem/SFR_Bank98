@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "eea4f019-cfd6-4072-a4b6-b0378b3d366b",
+		"name": "SFR_Bank98",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all Customers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Create Customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Max Mustermann\",\r\n    \"iban\": \"ABC\",\r\n    \"address\": \"Hinterholz 8\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sfrbank98demo.azurewebsites.net/api/Customers?code=m5HDqx7GZpCPsHn9GOSJowtJ4Opw3QcM19VnScaZNf36ORJfiUBW0g==",
+					"protocol": "https",
+					"host": [
+						"sfrbank98demo",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"Customers"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "m5HDqx7GZpCPsHn9GOSJowtJ4Opw3QcM19VnScaZNf36ORJfiUBW0g=="
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Transactions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Create Transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"creditor\": \"IFMWNF\",\r\n    \"debtor\": \"ABC\",\r\n    \"executionDate\": \"2022-03-15T21:11:20Z\",\r\n    \"amount\": \"50\",\r\n    \"description\": \"Buy me some bananas\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sfrbank98demo.azurewebsites.net/api/Transactions?code=YS6ucfcC8UBYX4J2X4xFda9RQeHyiasIwXVb6dWllxpjJIEaaxoj6Q==",
+					"protocol": "https",
+					"host": [
+						"sfrbank98demo",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"Transactions"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "YS6ucfcC8UBYX4J2X4xFda9RQeHyiasIwXVb6dWllxpjJIEaaxoj6Q=="
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Report",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Get Report Local",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
